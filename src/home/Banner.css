@@ -1,0 +1,42 @@
+.carousel-caption .tituno{
+    color: #fb5850;
+    font-size: 17px;
+    font-family: 'Outfit',sans-serif; 
+}
+.carousel-caption .titdos{
+    font-family: "Jost",Sans-serif;
+    font-size: 60px;
+    font-weight: 500;
+    color: #060815; 
+}
+.carousel-caption .tittres{
+    color: #6b6b6b;
+    font-family: 'Outfit',sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    font-size: 17px;
+}
+.carousel-caption .colorb{
+    border-radius: 50px;
+    background-color: #242879;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    padding: 13px 31px;
+}
+.carousel-item  .moverb{
+    margin-bottom: 19%;
+}
+.contlogo{
+    box-shadow: 0px 31px 40px 0px rgb(0 0 0 / 11%);
+    background-color: #fff;
+    padding: 40px 80px;
+    width: 1299px;
+    height: 160px;
+    
+    border-radius: 40px;  
+    
+}
+.contlogo .col{
+    padding: 15px 15px;
+}

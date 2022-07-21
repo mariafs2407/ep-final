@@ -1,0 +1,58 @@
+.cajap{      
+    box-shadow: 9px 9px 5px #6b6b6b3a;
+    background-color: #fff;
+    padding: 5px;
+    height: 290px;
+    border: 2px solid #fff;
+    opacity: 0.7;   
+    border-radius: 50px;
+}
+.cajap:hover{
+    opacity: 1.8;
+}
+
+.card-body .card-title{
+    font-family: 'Jost',sans-serif;    
+    font-size: 24px;      
+    color: #060815;
+}
+.card-body .card-text{
+    font-family: 'Outfit',sans-serif;        
+    font-size: 17px;    
+    color: #6b6b6b;
+}
+
+.carrito{
+    color: #f2543f;
+    font-size: 30px; 
+    font-weight: bold;      
+    font-family: 'Outfit',sans-serif;   
+    text-align: center;
+    
+}
+.align-items-md-stretch .texto{
+    padding-top: 10%;
+    padding-right: 30px;
+}
+.titpp{
+    color: #fb5850;
+    font-size: 17px;
+    font-family: 'Outfit',sans-serif; 
+    text-align: center;
+}
+.titp{
+    font-family: "Jost",Sans-serif;
+    font-size: 60px;
+    font-weight: 500;
+    color: #060815; 
+    text-align: center;
+    padding: 15px;
+}
+.titdp{
+    color: #6b6b6b;
+    font-family: 'Outfit',sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    font-size: 17px;
+    text-align: center;
+}

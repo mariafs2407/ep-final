@@ -1,0 +1,19 @@
+.borde ,.list-unstyled {
+    color: #6b6b6b;
+    font-family: 'Outfit',sans-serif;
+    font-size: 16px;
+}
+.titf{
+    color: #262626;
+    font-family: 'Jost',sans-serif;
+    font-size: 20px;
+}
+.caja .colr{
+    color: #262626;
+    font-family: 'Outfit',sans-serif;
+    font-size: 17px;
+}
+
+.caja a:hover{
+    color: #0056b3;
+}
