@@ -30,6 +30,7 @@
     font-size: 18px;
     color: #fff;
     padding: 13px 31px;
+    font-family: 'Outfit', sans-serif;
 }
 .colorb:hover{
     background: linear-gradient(to left, #fec345 0%, #fb5850 100%);
