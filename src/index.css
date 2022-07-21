@@ -39,6 +39,14 @@
     color: #fff;
     border: 2px solid #fec345;
 }
+.colorb:active, .colorb:visited{
+    background: linear-gradient(to left, #fec345 0%, #fb5850 100%);
+    border-radius: 50px;
+    padding: 13px 31px;
+    font-size: 18px;
+    color: #fff;
+    border: 2px solid #fec345;
+}
 
 .tittabla{
     font-family: 'Jost',sans-serif;    
