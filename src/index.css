@@ -38,6 +38,7 @@
     font-size: 18px;
     color: #fff;
     border: 2px solid #fec345;
+    font-family: 'Outfit', sans-serif;
 }
 .colorb:active, .colorb:visited{
     background: linear-gradient(to left, #fec345 0%, #fb5850 100%);
@@ -46,6 +47,7 @@
     font-size: 18px;
     color: #fff;
     border: 2px solid #fec345;
+    font-family: 'Outfit', sans-serif;
 }
 
 .tittabla{
@@ -53,9 +55,7 @@
     font-size: 24px;      
     color: #060815;
 }
-.tmimg{
-    width: 82%;
-}
+
 .texto{
     padding-top: 10%;
     padding-right: 30px;
