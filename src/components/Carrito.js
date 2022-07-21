@@ -33,7 +33,7 @@ function Carrito() {
                 <div className='row'>
                     <div className='col-md-8'>
                         <table className='table'>
-                            <thead className='table-dark'>
+                            <thead className='table-light'>
                                 <tr>
                                     <th>Cod</th>
                                     <th>Nombre</th>
@@ -67,7 +67,7 @@ function Carrito() {
                         </table>
                     </div>
                     <div className='col-md-4'>
-                        <button className='btn btn-danger'
+                        <button className='btn btn-danger btnvaciar'
                             onClick={() => vaciarCarrito()}>Vaciar carrito</button>
                     </div>
                 </div>

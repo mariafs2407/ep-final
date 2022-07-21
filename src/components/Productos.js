@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import './Productos.css';
 import carrito from '../assets/carrito.png';
+import './Carrito.css';
 
 
 function Productos(props) {
     const [productos, setProductos] = useState([]);
-    const [itemProducto ,setItemProducto] =useState([]);
+
     useEffect(() => {
         leerProductos();
     }, []);
@@ -16,38 +17,41 @@ function Productos(props) {
                 return response.json();
             })
             .then((data) => {
+                console.log(data);
                 setProductos(data);
             })
     }
 
-    const agregarCarrito = (item) =>{
-        item.cantidad= "1"
-        let carrito =[];
 
-        if(localStorage.getItem("carrito")){
-            carrito=JSON.parse(localStorage.getItem("carrito"));
+
+    const agregarCarrito = (item) => {
+        item.cantidad = "1"
+        let carrito = [];
+
+        if (localStorage.getItem("carrito")) {
+            carrito = JSON.parse(localStorage.getItem("carrito"));
             var index = -1;
-            for(var i=0 ;i< carrito.length ;i++){
+            for (var i = 0; i < carrito.length; i++) {
                 var itemCarrito = carrito[i];
-                if(item.idproducto === itemCarrito.idproducto){
-                    index =i;
+                if (item.idproducto === itemCarrito.idproducto) {
+                    index = i;
                     break;
                 }
             }
-            if(index === -1){
+            if (index === -1) {
                 carrito.push(item);
-                localStorage.setItem("carrito",JSON.stringify(carrito));
+                localStorage.setItem("carrito", JSON.stringify(carrito));
             }
-            else{
-                let itemCarrito= carrito[index];
+            else {
+                let itemCarrito = carrito[index];
                 itemCarrito.cantidad++;
-                carrito[index]=itemCarrito;
-                localStorage.setItem("carrito",JSON.stringify(carrito));
+                carrito[index] = itemCarrito;
+                localStorage.setItem("carrito", JSON.stringify(carrito));
             }
         }
-        else{
+        else {
             carrito.push(item);
-            localStorage.setItem("carrito".JSON.stringify(carrito));
+            localStorage.setItem("carrito",JSON.stringify(carrito));
         }
     }
     return (
@@ -72,10 +76,10 @@ function Productos(props) {
                                 <div className="card-body">
                                     <h5 className="card-title">{item.nombre}</h5>
                                     <p className='card-text '>{item.detalle}</p>
-                                    <img src={carrito} onClick={(event) => agregarCarrito(item)}/>
+                                    <img src={carrito} onClick={(event) => agregarCarrito(item)} />
 
                                 </div>
-                                <p className='text-end carrito'>S/. {item.precio}</p>
+                                <p className='text-end carrito'>S/. {parseFloat(item.precio).toFixed(2)}</p>
                             </div>
                         </div>
                     )}
