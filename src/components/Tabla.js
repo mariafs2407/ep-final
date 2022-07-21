@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import lapiz from '../assets/lapiz.png';
+import './Tabla.css';
 
 
 function Tabla(props) {
@@ -42,13 +43,13 @@ function Tabla(props) {
                     <div className="modal-content">
                         <form >
                             <div className="modal-header">
-                                <h5 className="modal-title" id="exampleModalLabel">Actualizar categoría</h5>
+                                <h5 className="modal-title subs" id="exampleModalLabel">Actualizar categoría</h5>
                                 <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             {contenidoFormulario()}
                             <div className="modal-footer">
-                                <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                                <button type="submit" className="btn btn-primary">Guardar</button>
+                                <button type="button" className="btn colorb" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="submit" className="btn colorb">Guardar</button>
                             </div>
                         </form>
                     </div>
@@ -58,33 +59,33 @@ function Tabla(props) {
     }
     const contenidoFormulario = () => {
         return (
-            <div className="modal-body">
-                <div className="mb-3">
-                    <input type="text" className='form-control' placeholder='idproveedor' value={idproveedor}
+            <div className="modal-body ">
+                <div className="mb-3 ">
+                    <input type="text" className='form-control subds' placeholder='idproveedor' value={idproveedor}
                         readOnly />
                 </div>
-                <div className="mb-3">
-                    <input type="text" className='form-control' placeholder='Nombre de empresa' value={nombreempresa}
+                <div className="mb-3 ">
+                    <input type="text" className='form-control subds' placeholder='Nombre de empresa' value={nombreempresa}
                         required
                         onChange={(event) => setNombreempresa(event.target.value)} />
                 </div>
                 <div className="mb-3">
-                    <input type="text" className='form-control' placeholder='Contacto' value={nombrecontacto}
+                    <input type="text" className='form-control subds' placeholder='Contacto' value={nombrecontacto}
                         required
                         onChange={(event) => setNombrecontacto(event.target.value)} />
                 </div>
                 <div className="mb-3">
-                    <input type="text" className='form-control' placeholder='Direccion' value={direccion}
+                    <input type="text" className='form-control subds' placeholder='Direccion' value={direccion}
                         required
                         onChange={(event) => setDireccion(event.target.value)} />
                 </div>
                 <div className="mb-3">
-                    <input type="text" className='form-control' placeholder='Ciudad' value={ciudad}
+                    <input type="text" className='form-control subds '  placeholder='Ciudad' value={ciudad}
                         required
                         onChange={(event) => setCiudad(event.target.value)} />
                 </div>
                 <div className="mb-3">
-                    <input type="text" className='form-control' placeholder='Pais' value={pais}
+                    <input type="text" className='form-control subds' placeholder='Pais' value={pais}
                         required
                         onChange={(event) => setPais(event.target.value)} />
                 </div>               
@@ -95,10 +96,10 @@ function Tabla(props) {
     return (
         <section id="categorias" className='padded'>
             <div className="container">
-                <h2>Proveedores:</h2>
+                <h2 className='titp'>Proveedores:</h2>
                 <table className='table'>
-                    <thead className='table-dark'>
-                        <tr>
+                    <thead className='table-light'>
+                        <tr className='tittabla'>
                             <th>Cod</th>
                             <th>Nombre Empresa</th>
                             <th>Contacto</th>
@@ -108,7 +109,7 @@ function Tabla(props) {
                             <th>Ver</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody className='subds'>
                         {proveedores.map(item =>
                             <tr key={item.idproveedor}>
                                 <tr>{item.idproveedor}</tr>

@@ -1,0 +1,13 @@
+
+.titp{
+    font-family: "Jost",Sans-serif;
+    font-size: 60px;
+    font-weight: 500;
+    color: #060815; 
+    text-align: center;
+    padding: 15px;
+}
+.modal-content{
+    border-radius: 50px;
+    border: 2px solid #fff;
+}

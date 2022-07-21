@@ -75,7 +75,7 @@ function Productos(props) {
                             <div className="card cajap">
                                 <div className="card-body">
                                     <h5 className="card-title">{item.nombre}</h5>
-                                    <p className='card-text '>{item.detalle}</p>
+                                    <p className='card-text subds'>{item.detalle}</p>
                                     <img src={carrito} onClick={(event) => agregarCarrito(item)} />
 
                                 </div>

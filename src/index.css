@@ -1,2 +1,54 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&family=Outfit&display=swap');
+
+.titp{
+    font-family: "Jost",Sans-serif;
+    font-size: 60px;
+    font-weight: 500;
+    color: #060815; 
+    text-align: center;
+    padding: 15px;
+}
+.subds{
+    color: #6b6b6b;
+    font-family: 'Outfit',sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    font-size: 17px;
+    
+}
+.subs{
+    font-family: 'Jost',sans-serif;    
+    font-size: 24px;      
+    color: #060815;
+    padding: 20px;
+}
+.colorb{
+    border-radius: 50px;
+    background-color: #242879;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    padding: 13px 31px;
+}
+.colorb:hover{
+    background: linear-gradient(to left, #fec345 0%, #fb5850 100%);
+    border-radius: 50px;
+    padding: 13px 31px;
+    font-size: 18px;
+    color: #fff;
+    border: 2px solid #fec345;
+}
+
+.tittabla{
+    font-family: 'Jost',sans-serif;    
+    font-size: 24px;      
+    color: #060815;
+}
+.tmimg{
+    width: 82%;
+}
+.texto{
+    padding-top: 10%;
+    padding-right: 30px;
+}
